@@ -3,16 +3,16 @@ Practicing data analysis using DnD stats
 
 ## Installing R, R Tools, and Packages
 
-* R Installer: https://cran.r-project.org/bin/macosx/
-* R Tools Installer (to enable compiling for binaries): https://cran.r-project.org/bin/macosx/tools/
-* When installing a package use _install.packages('[PACKAGE_NAME]', dependencies = T)_
+* **R Installer**: https://cran.r-project.org/bin/macosx/
+* **R Tools Installer** (to enable compiling for binaries): https://cran.r-project.org/bin/macosx/tools/
+* When **installing a package** use _install.packages('[PACKAGE_NAME]', dependencies = T)_
   * First, choose "yes" when asked whether to install from binaries.
   * For any that fail (warning message: "installation of package '[PACKAGE_NAME]' had non-zero exit status"), run _install.packages()_ for that package only, and choose "no" when asked whether to install from binaries.
 * Load in packages using _library([PACKAGE_NAME])_.
 
 ## Notes on Best Practice
 
-1. Use **Projects** rather than including _rm(list=ls())_: 
+1. **Use Projects rather than including _rm(list=ls())_:** 
    * **Why?** 
      * _rm()_ doesn't actually ensure a truly clean workspace due to hidden items.
      * Using a Project eliminates the need for local file directory paths, which will break on different computers.
