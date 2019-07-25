@@ -12,12 +12,12 @@ Practicing data analysis using DnD stats
 
 ## Notes on Best Practice
 
-1. Use Projects rather than including _rm(list=ls())_: 
-   * Why? 
+1. Use **Projects** rather than including _rm(list=ls())_: 
+   * **Why?** 
      * _rm()_ doesn't actually ensure a truly clean workspace due to hidden items.
      * Using a Project eliminates the need for local file directory paths, which will break on different computers.
      * Allows the use of the _here()_ package and function which ensures better cross-system compatability.
-   * How?
+   * **How?**
      * When starting a new project, use _File > New Project_ the first time you create a new file.
      * To ensure a clean workspace on startup, use _RStudio > Preferences > General_:
        * Uncheck "Restore .RData..."
