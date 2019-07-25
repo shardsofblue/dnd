@@ -27,3 +27,25 @@ Practicing data analysis using DnD stats
        * opening them directly from the Finder
        * clicking _File > Open Project_
        * using the Project drop-down in the upper-right of RStudio.
+       
+       Be intentional in making graphs colorblind-accessible:
+* Why?
+  * The default ggplot palette is not strongly differentiated in value
+  * Non-colorblind-friendly palettes are not only inaccessible, but unclear when printed in black and white
+* How?
+  * Use premade palettes created with colorblindness in mind:
+    * A particluarly good one is Viridis, found and explained here: https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+    * Another option is to use the following:
+Colorblind-friendly palette
+cbPalette <- c("#999999", # Dark Gray
+               "#E69F00", # Mustard Yellow
+               "#56B4E9", # Sky Blue
+               "#009E73", # Strong Green
+               "#F0E442", # Lemon Yellow
+               "#0072B2", # Denim Blue
+               "#D55E00", # Rust Orange
+               "#CC79A7") # Lavender
+To use for fills, add
+scale_fill_manual(values=cbPalette)
+To use for line and point colors, add
+scale_colour_manual(values=cbPalette)
