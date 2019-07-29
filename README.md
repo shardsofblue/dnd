@@ -35,8 +35,10 @@ Practicing data analysis using DnD stats
    * **How?**
      * Use premade palettes created with colorblindness in mind:
        * A particluarly good one is Viridis, found and explained here: https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+     * Use gradients of a single color, going from light to dark, by including the following line within ggplot2: 
+``` scale_colour_gradient(low = "#E0FEA9", high = "#144A11")```
      * Another option is to use the following:
-Colorblind-friendly palette
+``` Colorblind-friendly palette
 cbPalette <- c("#999999", # Dark Gray
                "#E69F00", # Mustard Yellow
                "#56B4E9", # Sky Blue
@@ -45,7 +47,7 @@ cbPalette <- c("#999999", # Dark Gray
                "#0072B2", # Denim Blue
                "#D55E00", # Rust Orange
                "#CC79A7") # Lavender
-To use for fills, add
-scale_fill_manual(values=cbPalette)
-To use for line and point colors, add
-scale_colour_manual(values=cbPalette)
+#To use for fills, add
+#scale_fill_manual(values=cbPalette)
+#To use for line and point colors, add
+#scale_colour_manual(values=cbPalette) ```
