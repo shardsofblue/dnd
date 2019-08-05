@@ -1,3 +1,11 @@
+##Special paths
+# There are a few special paths that are useful:
+
+# . is the working directory
+# ~ is the user’s home directory. On my computer, ~ is equivalent to /home/bbaumer.
+# .. is the parent directory. So ../magazines.csv refers to a file called magazines.csv in the directory that is one level above the working directory.
+
+
 ### Scatterplot graph with trendline, axes reversed
 # CSAs to call out
 callout_ls <- c("Canton", "Clifton-Berea", "Greater Roland Park/Poplar Hill", "Greenmount East")
