@@ -1,0 +1,39 @@
+---
+title: "test-parent"
+author: "Roxanne Ready"
+date: "9/5/2019"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    df_print: paged
+  md_document:
+    variant: markdown_github
+    toc: true
+    toc_depth: 3
+---
+
+```{r include=FALSE}
+# Save this file and run the following line from the Console to output both HTML and .md formats:
+# rmarkdown::render('documentation/NPR/NPR-Analysis.Rmd', output_format = 'all')
+# To spellcheck: spell_check_files('documentation/NPR/NPR-Analysis.Rmd')
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, paged.print=TRUE)
+```
+
+# R Markdown
+
+## Parent document header
+
+Parent document text
+
+```{r }
+str(mtcars)
+```
+
+```{r test-parent, child = here::here("tests/child/test-child.Rmd")}
+```
